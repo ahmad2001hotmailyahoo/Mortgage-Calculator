@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Lime: hsl(61, 70%, 52%);
+  --Red: hsl(4, 69%, 50%);
+  --White: hsl(0, 0%, 100%);
+  --Slate-100: hsl(202, 86%, 94%);
+  --Slate-300: hsl(203, 41%, 72%);
+  --Slate-500: hsl(200, 26%, 54%);
+  --Slate-700: hsl(200, 24%, 40%);
+  --Slate-900: hsl(202, 55%, 16%);
+}
+
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.mortage-calculator-form {
+  padding: 8px;
+}
+
+.mortage-form--header {
+  color: var(--Slate-900);
+}
+
+.clear-text {
+  margin-bottom: 8px;
+  text-decoration: underline;
+  color: var(--Slate-700);
+}
+
+.form-control {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.form-select-control {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: 1px solid black;
+  padding: 12px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}
+
+.form-icon {
+  display: flex;
+  align-items: center;
+  background: hsl(202, 86%, 94%);
+  padding: 12px;
+}
+
+.form-control .input-control {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 32px;
+}
+
+.submit-button {
+  margin: auto;
+  width: 100%;
+  background-color: var(--Lime);
+  color: var(--Slate-900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 16px;
+  margin-bottom: 8px;
+}
+
+.mortage-results {
+  background: var(--Slate-900);
+  margin-bottom: 8px;
+}
+
+.results-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--White);
+}
+
+.result-into-icon {
+  margin-top: 16px;
+}
+
+.result-intro-para {
+  width: 80%;
+  text-align: center;
+}
