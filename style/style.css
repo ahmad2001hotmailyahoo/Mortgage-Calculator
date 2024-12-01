@@ -6,6 +6,8 @@ body {
 
 :root {
   --Lime: hsl(61, 70%, 52%);
+  --Lime-1: hsl(61, 70%, 56%);
+  --Lime-2: hsl(61, 70%, 82%);
   --Red: hsl(4, 69%, 50%);
   --White: hsl(0, 0%, 100%);
   --Slate-100: hsl(202, 86%, 94%);
@@ -25,11 +27,21 @@ body {
   padding: 8px;
 }
 
+.label {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.form-item {
+  margin-bottom: 16px;
+}
+
 .mortage-form--header {
   color: var(--Slate-900);
 }
 
 .clear-text {
+  display: inline-block;
   margin-bottom: 8px;
   text-decoration: underline;
   color: var(--Slate-700);
@@ -49,6 +61,8 @@ body {
   padding: 12px;
   box-sizing: border-box;
   margin-bottom: 8px;
+  display: flex;
+  align-items: center;
 }
 
 .form-icon {
@@ -67,7 +81,13 @@ body {
   font-size: 32px;
 }
 
+input[type="radio"]:checked {
+  accent-color: hsl(61, 100%, 30%);
+}
+
+
 .submit-button {
+  font-weight: 900;
   margin: auto;
   width: 100%;
   background-color: var(--Lime);
@@ -78,11 +98,12 @@ body {
   border: none;
   border-radius: 16px;
   margin-bottom: 8px;
+  font-size: 24px;
+  padding: 16px;
 }
 
 .mortage-results {
   background: var(--Slate-900);
-  margin-bottom: 8px;
 }
 
 .results-intro {
@@ -100,4 +121,9 @@ body {
 .result-intro-para {
   width: 80%;
   text-align: center;
+}
+
+.form-select-control.selected {
+  background: var(--Lime-2);
+  border-color: var(--Lime);
 }
